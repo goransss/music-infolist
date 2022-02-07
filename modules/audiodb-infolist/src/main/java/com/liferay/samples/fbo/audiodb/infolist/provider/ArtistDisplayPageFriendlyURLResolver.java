@@ -1,7 +1,6 @@
 package com.liferay.samples.fbo.audiodb.infolist.provider;
 
 import com.liferay.info.constants.InfoDisplayWebKeys;
-import com.liferay.info.display.contributor.InfoDisplayContributorTracker;
 import com.liferay.info.display.url.provider.InfoEditURLProviderTracker;
 import com.liferay.info.exception.NoSuchInfoItemException;
 import com.liferay.info.field.InfoFieldValue;
@@ -158,9 +157,6 @@ public class ArtistDisplayPageFriendlyURLResolver implements FriendlyURLResolver
 
 		return new LayoutFriendlyURLComposite(layout, friendlyURL);
 	}
-
-	@Reference
-	protected InfoDisplayContributorTracker infoDisplayContributorTracker;
 
 	@Reference
 	protected InfoEditURLProviderTracker infoEditURLProviderTracker;
