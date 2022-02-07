@@ -84,7 +84,7 @@ public class ArtistServiceImpl implements ArtistService {
 
 		OkHttpClient client = new OkHttpClient();
 		Request request = new Request.Builder()
-			      .url("https://www.theaudiodb.com/api/v1/json/1/search.php?s=" + name)
+			      .url("https://www.theaudiodb.com/api/v1/json/2/search.php?s=" + name)
 			      .build();
 
 		try (Response response = client.newCall(request).execute()) {
